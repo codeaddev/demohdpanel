@@ -1,0 +1,15 @@
+.container {
+    // border: 1px solid red;
+    width: 100%;
+    max-width: 1202px;
+    margin: 2rem auto 3rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 1.5rem;
+
+    &.big {
+      justify-content: flex-start;
+    }
+}

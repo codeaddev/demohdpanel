@@ -1,0 +1,15 @@
+.sliderContainer {
+  // border: 1px solid red;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.25rem 6.375rem;
+
+  .slick-slider.slick-initialized {
+    // border: 1px solid green;
+    padding-left: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    height: 9.5rem;
+  }
+}

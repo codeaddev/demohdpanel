@@ -1,0 +1,33 @@
+.category-headlines-slider-single {    
+    // border:1px solid red;
+    // height: 12rem;
+    width: 8.5rem !important;
+    
+    img {
+      width: 100% !important;
+    }
+
+    h5 {
+      margin-top: .3rem;
+      font-size: .75rem;
+      color: var(--blueBgColor);
+      transition: var(--transition);
+
+      &.dark {
+        color:var(--redBgColor);
+      }
+    }
+
+    .slide-content {
+      padding: 0;
+      margin-top: .2rem;
+      font-weight: 600;
+      text-align: left;
+      color: var(--textColor);
+      transition: var(--transition);
+
+      &.dark {
+        color:#fff;
+      }
+    }
+}

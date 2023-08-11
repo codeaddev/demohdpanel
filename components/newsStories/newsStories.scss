@@ -1,0 +1,92 @@
+.main-fluid {
+  // border: 1px solid blue;
+  width: 100%;
+  height: calc(100vh - 9.5rem);
+  overflow: hidden;
+
+  .cont {
+    display: flex;
+    gap: .5rem;
+
+    .cats {
+      //background-color: green;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      height: 83vh;
+      overflow-y: auto;
+      padding: .5rem 0;
+      gap: .5rem;
+      // border: 1px solid red;
+    }
+
+    .stors {
+      // border: 1px solid red;
+      position: relative;
+      height: 83vh;
+      width: 80%; // GEREKLİ
+
+      .close {
+        position: absolute;
+        top: 1.5rem;
+        right: 3rem;
+        z-index: 7777;
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icon {
+        position: absolute;
+        top: 20rem;
+        z-index: 3;
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &.prev {
+          left: 10rem;
+        }
+
+        &.next {
+          right: 10rem;
+        }
+
+        // svg {
+        //   cursor: pointer !important;
+        //   color: red !important;
+        // }
+      }
+
+      & > div > div:nth-child(2) {
+        // border: 5px solid red;
+        display: flex;
+        justify-content: center;
+        // background-color: red;
+
+        // video {
+        //   border: 2px solid blue;
+        // }
+
+        img {
+          // border: 5px solid blue;
+          height: 40rem !important;
+          object-fit: contain;
+          // width: 100% !important;
+          // margin-top: 3rem !important;
+          // width: 100% !important;
+          // height: 100% !important;
+        }
+
+      }
+    }
+  }
+}

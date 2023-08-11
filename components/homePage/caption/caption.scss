@@ -1,0 +1,35 @@
+.caption {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 3rem;
+    display: flex;
+    color: #333;
+    transition: var(--transition);
+
+    &.dark {
+        color: var(--whiteBgColor);
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+        color: currentColor;
+        align-self: flex-end;
+        margin-bottom: -0.7rem;
+        text-transform: capitalize;
+    }
+
+    .line {
+        flex:1;
+        border-bottom: 1px solid currentColor;
+        margin-right: 1rem;
+    }
+
+    p {
+        align-self: flex-end;
+        border-bottom: 1px solid currentColor;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}

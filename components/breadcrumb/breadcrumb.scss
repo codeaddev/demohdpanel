@@ -1,0 +1,134 @@
+$blue-gray: #34495e;
+$blue-gray-darken: #2c3e50;
+$blue: #3498db;
+$blue-darken: #2980b9;
+$green: #1abc9c;
+$green-darken: #16a085;
+
+.breadcrumb-container {
+  //  border: 1px solid red;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: .5rem ;
+  // height: 2.5rem;
+
+
+  .breadcrumb {
+    // border: 1px solid red;
+    // background-color: #f9f9f9;
+    list-style: none;
+    display: flex;
+    width: 100%;
+
+    svg {
+      font-size: 14px;
+    }
+
+    li {
+
+      &:last-of-type {
+        flex: 1;
+       }
+
+      a {
+        // display: flex;
+        // align-items: center;
+        color:white;
+        display: block;
+        background-color: var(--blueBgColor);
+        text-decoration: none;
+        position: relative;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        padding: 0 10px 0 5px;
+        text-transform: capitalize;
+        // text-align: center;
+        margin-right: 24px;
+      }
+
+      &:nth-child(even) {
+        a {
+          background-color:var(--blueBgColor);
+
+          &:before {
+            border-color: var(--blueBgColor);
+            border-left-color: transparent;
+          }
+          &:after {
+            border-left-color: var(--blueBgColor);
+          }
+        }
+      }
+
+      &:first-child {
+        a {
+          padding-left: 15px;
+          border-radius: 3px 0 0 3px;
+          &:before {
+            border: none;
+          }
+        }
+      }
+
+      &:last-child {
+        a {
+          padding-right: 15px;
+          border-radius: 0 3px 3px 0;
+          margin-right: 0;
+          &:after {
+            border: none;
+          }
+        }
+      }
+
+      a {
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          border: 0 solid var(--blueBgColor);
+          border-width: 20px 10px;
+          width: 0;
+          height: 0;
+        }
+
+        &:before {
+          left: -20px;
+          border-left-color: transparent;
+        }
+
+        &:after {
+          left: 100%;
+          border-color: transparent;
+          border-left-color: var(--blueBgColor);
+        }
+        
+        &:hover {
+          background-color: $green;
+
+          &:before {
+            border-color: $green;
+            border-left-color: transparent;
+          }
+          &:after {
+            border-left-color: $green;
+          }
+        }
+
+        &:active {
+          background-color: $green-darken;
+
+          &:before {
+            border-color: $green-darken;
+            border-left-color: transparent;
+          }
+          &:after {
+            border-left-color: $green-darken;
+          }
+        }
+      }
+    }
+  }
+}

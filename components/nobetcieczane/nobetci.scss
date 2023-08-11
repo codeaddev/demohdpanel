@@ -1,0 +1,77 @@
+.form-wrapper {
+  // border: 1px solid red;
+
+  .city-form {
+    // border: 1px solid red;
+    width: 728px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    select,
+    input {
+      width: 200px;
+      padding: 0.5rem;
+      cursor: pointer;
+      text-align: center;
+      border: 1px solid rgb(118, 118, 118);
+      border-radius: 3px;
+    }
+
+    input {
+      background-color: transparent;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .item {
+      // border: 1px solid red;
+      width: 60%;
+      margin: 1rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+
+      .upside {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-left {
+          display: flex;
+          width: 30%;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+
+      .downside {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+        img {
+          width: 32px;
+          height: 32px;
+        }
+        p {
+            font-size: .8rem;
+        }
+      }
+    }
+  }
+}

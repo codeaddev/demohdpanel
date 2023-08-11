@@ -1,0 +1,44 @@
+.card {
+  // border: 1px solid red;
+  width: 11.5rem;
+  height: 9rem;
+  // height: 9.5rem;
+  margin-bottom: 0;
+  transition: var(--transition);
+
+  &.dark {
+    color: var(--whiteBgColor);
+  }
+
+  .image {
+    // border: 1px solid red;
+    width: 100%;
+    height: 6rem;
+  }
+
+  .content {
+    // border: 1px solid red;
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.3rem;
+    color: black;
+
+    .title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-overflow: ellipsis;
+    }
+
+    .disc {
+      border: 4px solid var(--redBgColor);
+      margin-top: 0.1rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      transition: var(--transition);
+
+      &.dark {
+        border: 4px solid #000;
+      }
+    }
+  }
+}

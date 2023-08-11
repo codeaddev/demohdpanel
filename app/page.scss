@@ -1,0 +1,13 @@
+.wrapper {
+    width: 100%;
+    transition: 1s all ease-in-out;
+
+    &.light {
+     background-color: var(--whiteBgColor);
+    }
+
+    &.dark {
+        background-color: var(--darkBgColor);
+    }
+}
+

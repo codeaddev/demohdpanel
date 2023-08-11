@@ -1,0 +1,49 @@
+.most-reads-single {
+    display: flex;
+    gap: 0.75rem;
+    
+    &:not(:last-child){
+        margin-bottom: 0.75rem;
+    }
+
+    &-pic {
+        // border: 1px solid red;
+        position: relative;
+        // flex-basis: 4.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
+
+        img {    
+            object-fit: cover;
+        }
+    }
+
+    &-content {
+        flex: 1;
+
+        .content-title {
+            color: var(--blueBgColor);
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            transition: var(--transition);
+
+            &.dark {
+              color: var(--redBgColor);
+            }
+        }
+
+        .content-itself {
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-align: justify;
+            padding-right: .5rem;
+            transition: var(--transition);
+
+            &.dark {
+              color: #fff;
+            }
+        }
+    }
+}

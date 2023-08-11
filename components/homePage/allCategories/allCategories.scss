@@ -1,0 +1,25 @@
+.allCats {
+//border: 1px solid red;
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto;
+  height: 28.125rem;
+  display: flex;
+  gap: 1.5rem;
+
+  .left-side {
+    // border: 1px solid red;
+    flex: 791;
+    display: flex;
+    gap: 1.5rem;
+}
+
+  .right-side {
+    // border: 1px solid red;
+    flex: 385;
+    display: flex;
+    column-gap: 1.5rem;
+    row-gap: 5px;
+    flex-flow: row wrap;
+  }
+}
